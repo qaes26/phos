@@ -87,7 +87,8 @@
         .wallpaper {
             position: absolute;
             inset: 0;
-            background-image: url('1000240428.jpg');
+            /* تم تحديث اسم الصورة هنا لتطابق الموجود في GitHub */
+            background-image: url('./Snapchat-597828856.jpg'); 
             background-size: cover;
             background-position: center;
             z-index: 1;
@@ -113,12 +114,6 @@
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-
-        .glass-dark {
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
         }
 
         /* Apps Screen Container */
@@ -206,12 +201,12 @@
                     </div>
                     <div>
                         <h3 class="font-semibold text-sm">System Message</h3>
-                        <p class="text-xs opacity-90">Someone loves you endlessly... ❤️</p>
+                        <p class="text-xs opacity-90" dir="rtl">شخص ما يعشقك بلا نهاية... ❤️</p>
                     </div>
                 </div>
 
                 <div class="mt-8 flex flex-col items-center animate-bounce-up cursor-pointer" onclick="unlockPhone()">
-                    <span class="text-sm tracking-widest uppercase mb-2 opacity-80">Swipe up to open</span>
+                    <span class="text-sm tracking-widest uppercase mb-2 opacity-80">اسحب للأعلى لفتح القفل</span>
                     <div class="w-12 h-1 bg-white rounded-full opacity-50"></div>
                 </div>
             </div>
@@ -222,7 +217,7 @@
             <!-- Widgets -->
             <div class="glass rounded-3xl p-5 mb-8 text-white shadow-lg pointer-events-auto">
                 <h3 class="font-cursive text-2xl mb-1">Habibti Rahaf,</h3>
-                <p class="text-sm opacity-90 font-arabic leading-relaxed">يا سيدة قلبي وكل حياتي، أنتِ النور الذي يضيء عتمة أيامي. أحبكِ فوق الحب حباً.</p>
+                <p class="text-sm opacity-90 font-arabic leading-relaxed" dir="rtl">يا سيدة قلبي وكل حياتي، أنتِ النور الذي يضيء عتمة أيامي. أحبكِ فوق الحب حباً.</p>
                 <div class="mt-3 flex items-center gap-2 text-xs">
                     <i class="fa-solid fa-music"></i> Now playing: كوكب الشرق - وعمري ما أشكي
                 </div>
@@ -332,7 +327,7 @@
 
         <!-- Hidden Audio Element -->
         <audio id="bg-music" loop>
-            <source src="song1.mp3" type="audio/mpeg">
+            <source src="./song1.mp3" type="audio/mpeg">
         </audio>
     </div>
 
@@ -391,7 +386,7 @@
                 wallpaperOverlay.classList.add('wallpaper-blur');
             }, 100);
 
-            // Play music (might be blocked by browser until actual click, which swipe handles)
+            // Play music 
             try {
                 bgMusic.volume = 0.5;
                 bgMusic.play().catch(e => console.log("Audio autoplay prevented"));
@@ -442,7 +437,7 @@
                         
                         <div class="flex gap-2 w-3/4">
                             <div class="w-8 h-8 rounded-full bg-gray-300 overflow-hidden flex-shrink-0">
-                                <img src="1000240428.jpg" class="w-full h-full object-cover">
+                                <img src="./Snapchat-597828856.jpg" class="w-full h-full object-cover">
                             </div>
                             <div class="bg-gray-200 text-gray-800 p-3 rounded-2xl rounded-tl-none text-sm shadow-sm font-arabic" dir="rtl">
                                 صباح الخير يا روحي 🥰
@@ -463,7 +458,7 @@
 
                         <div class="flex gap-2 w-3/4 mt-2">
                             <div class="w-8 h-8 rounded-full bg-gray-300 overflow-hidden flex-shrink-0">
-                                <img src="1000240428.jpg" class="w-full h-full object-cover">
+                                <img src="./Snapchat-597828856.jpg" class="w-full h-full object-cover">
                             </div>
                             <div class="bg-gray-200 text-gray-800 p-3 rounded-2xl rounded-tl-none text-sm shadow-sm font-arabic" dir="rtl">
                                 يا عمري أنت 🥺❤️ وأنا بحبك كتيييير!
@@ -477,7 +472,7 @@
                 html: `
                     <div class="p-2 grid grid-cols-2 gap-2 bg-white">
                         <div class="rounded-xl overflow-hidden shadow-sm aspect-square relative group">
-                            <img src="1000240428.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <img src="./Snapchat-597828856.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-2">
                                 <span class="text-white text-xs font-medium font-arabic" dir="rtl">أجمل عيون ❤️</span>
                             </div>
@@ -489,7 +484,7 @@
                             <i class="fa-solid fa-heart text-5xl text-white drop-shadow-md animate-pulse"></i>
                         </div>
                         <div class="rounded-xl overflow-hidden shadow-sm aspect-square relative group">
-                            <img src="1000240428.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <img src="./Snapchat-597828856.jpg" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-2 text-right">
                                 <span class="text-white text-xs font-medium font-arabic" dir="rtl">نور حياتي ✨</span>
                             </div>
@@ -502,7 +497,7 @@
                 html: `
                     <div class="flex flex-col items-center p-8 bg-gradient-to-b from-gray-50 to-gray-200 h-full">
                         <div class="w-48 h-48 rounded-full shadow-2xl overflow-hidden mb-6 border-4 border-white animate-[pulse_4s_ease-in-out_infinite] relative group">
-                            <img src="1000240428.jpg" class="w-full h-full object-cover rounded-full">
+                            <img src="./Snapchat-597828856.jpg" class="w-full h-full object-cover rounded-full">
                             <div class="absolute inset-0 bg-black/20 rounded-full"></div>
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-8 h-8 rounded-full bg-white/30 backdrop-blur-sm border border-white/50"></div>
@@ -571,7 +566,7 @@
                                 <div class="absolute -right-[31px] bg-pink-400 w-4 h-4 rounded-full border-4 border-white shadow-sm"></div>
                                 <h3 class="text-sm font-bold text-gray-800">يوم أن أصبحتِ لي</h3>
                                 <p class="text-xs text-gray-500 mt-1">أجمل أيام العمر، يوم توجتِ كأميرة في قلبي وبيتي، كنتِ كالملاك في فستانك الأبيض.</p>
-                                <img src="1000240428.jpg" class="w-32 h-24 object-cover rounded-lg mt-3 shadow-sm mr-auto">
+                                <img src="./Snapchat-597828856.jpg" class="w-32 h-24 object-cover rounded-lg mt-3 shadow-sm mr-auto">
                             </div>
 
                             <!-- Timeline Item 3 -->
@@ -639,7 +634,7 @@
             const now = new Date().getTime();
             const difference = now - startDate;
 
-            if (difference < 0) return; // حماية في حال كان التاريخ في المستقبل
+            if (difference < 0) return;
 
             const days = Math.floor(difference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -652,7 +647,6 @@
             document.getElementById('timer-seconds').innerText = seconds;
         }
 
-        // تحديث العداد كل ثانية
         setInterval(updateLoveTimer, 1000);
 
         function openApp(appId) {
@@ -671,12 +665,10 @@
 
             appView.classList.add('active');
 
-            // تشغيل العداد فوراً عند فتح التطبيق لعدم الانتظار ثانية قبل التحديث
             if (appId === 'timer') {
                 updateLoveTimer();
             }
 
-            // Sync music play/pause icon when music app opens
             if (appId === 'music') {
                 setTimeout(() => {
                     const icon = document.getElementById('play-icon');
@@ -695,42 +687,37 @@
 
         function closeApp() {
             appView.classList.remove('active');
-            // Small delay to clear content after animation
             setTimeout(() => {
                 appContent.innerHTML = '';
             }, 400);
         }
 
-        // Floating Hearts Logic
         function startHearts() {
             if(heartInterval) return;
             const container = document.getElementById('phone');
             const icons = ['fa-heart', 'fa-star', 'fa-heart', 'fa-sparkles'];
             
             heartInterval = setInterval(() => {
-                if(Math.random() > 0.6) return; // Randomize density
+                if(Math.random() > 0.6) return;
 
                 const heart = document.createElement('i');
                 const randomIcon = icons[Math.floor(Math.random() * icons.length)];
                 heart.className = `fa-solid ${randomIcon} heart`;
                 
-                // Random positioning and size
                 const size = 10 + Math.random() * 20;
-                const left = 10 + Math.random() * 80; // percentage
-                const duration = 3 + Math.random() * 4; // seconds
+                const left = 10 + Math.random() * 80;
+                const duration = 3 + Math.random() * 4;
 
                 heart.style.fontSize = `${size}px`;
                 heart.style.left = `${left}%`;
                 heart.style.animationDuration = `${duration}s`;
                 
-                // Random color palette
                 const colors = ['#f43f5e', '#fb7185', '#fda4af', '#fecdd3', '#ffffff'];
                 heart.style.color = colors[Math.floor(Math.random() * colors.length)];
                 if(heart.style.color === '#ffffff') heart.style.textShadow = '0 0 5px rgba(0,0,0,0.2)';
 
                 container.appendChild(heart);
 
-                // Remove after animation
                 setTimeout(() => {
                     if(heart.parentNode) heart.parentNode.removeChild(heart);
                 }, duration * 1000);
@@ -738,7 +725,6 @@
             }, 400);
         }
 
-        // Surprise Popup Logic
         function showSurprise() {
             if(surpriseTriggered) return;
             surpriseTriggered = true;
@@ -749,7 +735,6 @@
             popup.classList.remove('hidden');
             popup.classList.add('flex');
             
-            // Trigger reflow for animation
             void popup.offsetWidth;
             
             popup.classList.remove('opacity-0');
@@ -776,7 +761,6 @@
     </script>
 </body>
 </html>
-
 
 
 ```
